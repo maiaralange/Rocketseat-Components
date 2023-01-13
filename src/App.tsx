@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Player from './components/player/Player';
+import MusicPlayer from './components/musicPlayer/MusicPlayer';
 import { GlobalStyle } from './styles/global';
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
       <GlobalStyle />
       <Router>
         <Routes>
-          <Route path="/player" element={<Player />} />
+          <Route path="/player" element={<MusicPlayer />} />
         </Routes>
       </Router>
     </>
