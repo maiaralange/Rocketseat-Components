@@ -1,11 +1,18 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Player from './components/player/Player';
 import { GlobalStyle } from './styles/global';
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <>
       <GlobalStyle />
-    </div>
+      <Router>
+        <Routes>
+          <Route path="/player" element={<Player />} />
+        </Routes>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;
